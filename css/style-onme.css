@@ -1,0 +1,19 @@
+.about-us-logo{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.about-us-logo:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+
+
+.background-image-faq {
+    min-height: 540px;
+}
+  
+.card-title {
+    color: #bc266b;
+}
