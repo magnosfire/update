@@ -2,10 +2,10 @@
 $(document).ready(function () {
   "use strict";
 
-  var window_width = $(window).width(),
-    window_height = window.innerHeight,
-    header_height = $(".default-header").height(),
-    header_height_static = $(".site-header.static").outerHeight(),
+  var window_width = ($(window).width() * 0.8),
+    window_height = (window.innerHeight * 0.8),
+    header_height = ($(".default-header").height() * 0.8),
+    header_height_static = ($(".site-header.static").outerHeight() * 0.8),
     fitscreen = window_height - header_height;
 
 
