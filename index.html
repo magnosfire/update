@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/logo-onMe.png">
-		<meta name="author" content="OnMe">
-		<meta name="description" content="O seu Seguro Auto completo e justo! Nós viemos para servir e evoluir. Contrate já. Assista ao vídeo. renove por um preço justo.">
-		<meta name="keywords" content="onme, on-me, seguros, auto,">
-		<meta charset="UTF-8">
-	
-		<title>OnMe Seguros</title>
-	
-		<!-- CSS -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">		
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="fonts/icomoon/style.css">
-		<link rel="stylesheet" href="css/carousel.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/style-onme.css">
-	
-	</head>
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/logo-onMe.png">
+	<meta name="author" content="OnMe">
+	<meta name="description"
+		content="O seu Seguro Auto completo e justo! Nós viemos para servir e evoluir. Contrate já. Assista ao vídeo. renove por um preço justo.">
+	<meta name="keywords" content="onme, on-me, seguros, auto,">
+	<meta charset="UTF-8">
+
+	<meta name="csrf-token" content="sVc1OaDugJdESUMDAdt3FhcPVtEJ3hNuQrtG2ZmE">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="OnMe Seguros">
+	<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+	<meta name="google-site-verification" content="tep94XKgbQohgjlyLJN0eZehycFq-X-K087504RBff4" />
+
+	<title>OnMe Seguros</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style-onme.css">
+
+</head>
 
 <body>
+
+
 
 	<header class="default-header">
 
@@ -49,6 +62,7 @@
 						<li><a href="coberturas.html">Coberturas e Assistencias</a></li>
 						<li><a href="faq.html">FAQ</a></li>
 						<li><a href="https://www.blog.onmeseguros.com.br/" target="_blank">Blog</a></li>
+						<li><a href="https://www.cotacao.onmeseguros.com.br/admin/">Corretor</a></li>
 						<li><a href="">Minha Conta</a></li>
 					</ul>
 				</div>
@@ -67,7 +81,9 @@
 						<span>Completo</span> e <br>
 						<span>Justo</span>
 					</h1>
-					<a href="#" class="primary-btn header-btn text-uppercase">Contrate Já!</a>
+
+					<a href="#" class="primary-btn header-btn text-uppercase" data-toggle="modal"
+						data-target="#cotacaoModal" data-whatever="@getbootstrap">Contrate Já!</a>
 				</div>
 			</div>
 		</div>
@@ -114,7 +130,8 @@
 
 				<div class="sigle-service col-lg-4 col-md-6" style="text-align: center;">
 
-					<img class="col-6 col-offset-3" src="img/icon-justo.png" alt="Justo e Completo" style="height: auto;">
+					<img class="col-6 col-offset-3" src="img/icon-justo.png" alt="Justo e Completo"
+						style="height: auto;">
 
 					<h4>Justo e Completo</h4>
 
@@ -146,8 +163,6 @@
 		</div>
 
 	</section>
-
-
 
 	<section class="service-area pt-100 pb-150" id="coberturas" style="background-color: #f7f4f78f;">
 
@@ -200,8 +215,8 @@
 
 				<div class="sigle-service col-lg-3 col-md-6" style="text-align: center;">
 
-					<img class="col-6 col-offset-3" src="img/ic-acidente-pessoal.png" alt="Acidentes Pessoais de Passageiros"
-						style="height: auto;">
+					<img class="col-6 col-offset-3" src="img/ic-acidente-pessoal.png"
+						alt="Acidentes Pessoais de Passageiros" style="height: auto;">
 
 					<h4>Acidentes Pessoais de Passageiros</h4>
 
@@ -243,9 +258,6 @@
 		</div>
 
 	</section>
-
-
-
 
 	<section class="service-area pt-100 pb-150" id="faq">
 		<div class="container">
@@ -436,34 +448,45 @@
 						</span>
 					</a>
 					<div class="col-8 carousel-inner row  mx-auto" role="listbox">
-						<a href="https://exame.abril.com.br/negocios/usebens-cria-insurtech-que-da-desconto-para-bons-motoristas/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active about-us-logo">
+						<a href="https://exame.abril.com.br/negocios/usebens-cria-insurtech-que-da-desconto-para-bons-motoristas/"
+							target="_blank"
+							class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active about-us-logo">
 							<img src="img/logo_exame.png" class="img-fluid d-block" alt="Imagem Revista Exame">
 						</a>
-						<a href="https://www.moneyreport.com.br/money-talks/incerteza-eleitoral-nao-pode-travar-investimento-em-inovacao/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.moneyreport.com.br/money-talks/incerteza-eleitoral-nao-pode-travar-investimento-em-inovacao/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-money.png" class="img-fluid  d-block" alt="Imagem Money Report">
 						</a>
-						<a href="https://www.cqcs.com.br/noticia/insurtech-descomplica-seguro-de-carros-com-assinatura-mensal-e-pontuacao-para-bons-motoristas/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.cqcs.com.br/noticia/insurtech-descomplica-seguro-de-carros-com-assinatura-mensal-e-pontuacao-para-bons-motoristas/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo_cqcs.png" class="img-fluid d-block" alt="Imagem CQCS">
 						</a>
-						<a href="https://www.revistaapolice.com.br/2018/08/apenas-12-cada-100-acionam-o-seguro-auto-um-ano/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.revistaapolice.com.br/2018/08/apenas-12-cada-100-acionam-o-seguro-auto-um-ano/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-apolice.png" class="img-fluid d-block" alt="Imagem Revista Apolice">
 						</a>
-						<a href="https://premioseguradorbrasil.com.br/premio-segurador-brasil-2017/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://premioseguradorbrasil.com.br/premio-segurador-brasil-2017/" target="_blank"
+							class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-psb.png" class="img-fluid d-block" alt="Imagem Premio Segurador Brasil">
 						</a>
-						<a href="https://exame.abril.com.br/negocios/usebens-cria-insurtech-que-da-desconto-para-bons-motoristas/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://exame.abril.com.br/negocios/usebens-cria-insurtech-que-da-desconto-para-bons-motoristas/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo_exame.png" class="img-fluid d-block" alt="Imagem Revista Exame">
 						</a>
-						<a href="https://www.moneyreport.com.br/money-talks/incerteza-eleitoral-nao-pode-travar-investimento-em-inovacao/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.moneyreport.com.br/money-talks/incerteza-eleitoral-nao-pode-travar-investimento-em-inovacao/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-money.png" class="img-fluid d-block" alt="Imagem Money Report">
 						</a>
-						<a href="https://www.cqcs.com.br/noticia/insurtech-descomplica-seguro-de-carros-com-assinatura-mensal-e-pontuacao-para-bons-motoristas/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.cqcs.com.br/noticia/insurtech-descomplica-seguro-de-carros-com-assinatura-mensal-e-pontuacao-para-bons-motoristas/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo_cqcs.png" class="img-fluid d-block" alt="Imagem CQCS">
 						</a>
-						<a href="https://www.revistaapolice.com.br/2018/08/apenas-12-cada-100-acionam-o-seguro-auto-um-ano/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://www.revistaapolice.com.br/2018/08/apenas-12-cada-100-acionam-o-seguro-auto-um-ano/"
+							target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-apolice.png" class="img-fluid d-block" alt="Imagem Revista Apolice">
 						</a>
-						<a href="https://premioseguradorbrasil.com.br/premio-segurador-brasil-2017/" target="_blank" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
+						<a href="https://premioseguradorbrasil.com.br/premio-segurador-brasil-2017/" target="_blank"
+							class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 about-us-logo">
 							<img src="img/logo-psb.png" class="img-fluid d-block" alt="Imagem Premio Segurador Brasil">
 						</a>
 
@@ -503,7 +526,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<footer class="footer-area section-gap" style="padding-bottom: 16px;">
 
@@ -649,18 +671,150 @@
 
 	</footer>
 
+	<div class="modal fade" id="cotacaoModal" tabindex="-1" role="dialog" aria-labelledby="cotacaoModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="border-bottom: none;padding-top: 0;padding-bottom: 0;">
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery-migrate-3.0.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/jquery.backstretch.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/main.js"></script>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+						style="padding-top: 28px;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<form id="contractModalForm" name="contractModalForm" accept-charset="UTF-8"
+						class="needs-validation">
+						<div class="form-row form-acept">
+							<div class="col-12 col-lg-12" style="margin-bottom: 16px;margin-top: 24px;">
+								<div class="col-10 offset-1">
+									<label for="name-contract"
+										class="mb-0 d-flex  text-mine-shaft unisans-semibold-text form-description"
+										aria-label="Digite qual é o seu nome"
+										style="margin-bottom: 6px!important;font-weight: 700;">
+										Nome Completo
+									</label>
+									<input id="name-contract" class="form-control"
+										placeholder="Digite qual é o seu nome" required name="fullName" type="text">
+									<div class="mb-2 invalid-feedback">
+										preenchimento obrigatório
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-12" style="margin-bottom: 16px;">
+								<div class="col-10 offset-1">
+									<label for="phone-contract"
+										class="mb-0 d-flex text-mine-shaft unisans-semibold-text form-description"
+										aria-label="Digite seu telefone"
+										style="margin-bottom: 6px!important;font-weight: 700;">
+										Telefone
+									</label>
+									<input id="sp_celphones" class="form-control mask-phone sp_celphones"
+										placeholder="Digite seu telefone" required name="phone" type="tel">
+									<div class="mb-2 invalid-feedback">
+										preenchimento obrigatório
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-12" style="margin-bottom: 16px;">
+								<div class="col-10 offset-1">
+									<label for="email-contract"
+										class="mb-0 d-flex text-mine-shaft unisans-semibold-text form-description"
+										aria-label="Digite seu e-mail"
+										style="margin-bottom: 6px!important;font-weight: 700;">
+										E-mail
+									</label>
+									<input id="email-contract" class="form-control" placeholder="Digite seu e-mail"
+										required name="email" type="email">
+									<div class="mb-2 invalid-feedback">
+										preenchimento obrigatório
+									</div>
+								</div>
+							</div>
+							<div class="w-100"></div>
+
+							<div class="col-12 col-lg-12" id="continueButton"
+								style="margin-bottom: 8px;margin-top: 16px;">
+								<div class="pt-1h w-100" style="text-align: center;">
+									<button class="primary-outline-btn text-uppercase"
+										onclick="configContractFormRequest()" type="submit">
+										Continuar
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form-onme.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+	!function (f, b, e, v, n, t, s) {
+		if (f.fbq) return; n = f.fbq = function () {
+			n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+		n.queue = []; t = b.createElement(e); t.async = !0;
+		t.src = v; s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '423176624838340');
+	fbq('track', 'PageView');
+</script>
+<noscript>
+	<img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=423176624838340&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>(function () {
+		window.onload = function () {
+			new BlipChat()
+				.withAppKey('b25tZXNpdGVodW1hbmJvdDozOTIwY2YzMi0zMGU4LTQ3YTktYjQ3Ni1kZjk1MzE4MDYzMGY=')
+				.withButton({ "color": "#b6205a" })
+				.build();
+		}
+	})();</script>
+<script type="text/javascript" src="https://crm.zoho.com/crm/javascript/zcga.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+	w[l] = w[l] || []; w[l].push({
+		'gtm.start':
+			new Date().getTime(), event: 'gtm.js'
+	}); var f = d.getElementsByTagName(s)[0],
+		j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-TS93F9B');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS93F9B" height="0" width="0"
+	style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 </html>
